@@ -1,0 +1,23 @@
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 top_padder23">
+				<a href="/" class="tr_small_logo"><%= render partial: 'shared/logo' %></a>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 padding_lr">
+				<nav class="navbar navbar-inverse" role="navigation">
+					<div class="navbar-header pull-left">
+						<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+							<span class="tr_toggle_menu"><span class="glyphicon glyphicon-list"></span></span><span class="tr_toggle_text">MENU</span><span class="sr-only"></span>
+						</button>
+					</div>
+					<!--/.navbar-header-->
+					<%= render partial: 'shared/menu',locals:{menus: @menus}%>
+					<!--/.navbar-collapse-->
+				</nav>
+			</div>
+		</div>
+		<!--navbar-->
+	</div>
+	<!--container-->
+</div>

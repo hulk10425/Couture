@@ -1,0 +1,9 @@
+<div id="main-nav" class="collapse navbar-collapse tr_fourth_menu menu_adjust">
+	<ul class="nav navbar-nav pull-right">
+		<% menusII.each do |m| %>
+		<li>
+			<a href="<%= m[1] %>" class="<%= is_active(action_name,m[2]) %>"><%= m[0] %></a>
+		</li>
+		<% end %>
+	</ul>
+</div>

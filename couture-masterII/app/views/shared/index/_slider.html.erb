@@ -1,0 +1,66 @@
+<% banner1 = "/images/prettyPhoto/cover1.jpg" %>
+<div class="tp-banner-container">
+	<%= render partial: 'shared/hamburger' %>
+	<div class="tp-banner" >
+		<ul>
+			<!-- SLIDE 1 -->
+			<li  data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb="<%= banner1 %>"  data-saveperformance="on">
+				<!-- MAIN IMAGE -->
+				<img class="rwd_normal" src="<%= banner1 %>"  alt="slidebg1" data-lazyload="<%= banner1 %>" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+				<!-- LAYERS -->
+
+				
+				<!-- LAYER NR. 2 -->
+				<div class="tp-caption customout white_heavy_60 tp-resizeme rs-parallaxlevel-0 "
+				data-x="265"
+				data-y="200"
+				data-speed="500"
+				data-start="1100"
+				data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+				data-easing="Power3.easeInOut"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+					- We Know Fashion -
+				</div>
+				<!-- LAYER NR. 4 -->
+				<div class="tp-caption customout white_heavy_30 tp-resizeme rs-parallaxlevel-0"
+				data-x="300"
+				data-y="300"
+				data-speed="500"
+				data-start="1600"
+				data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+				data-easing="Power3.easeInOut"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
+					Global Human Resources Consulting
+				</div>
+				
+				<div style="z-index: 6" >
+				<a href="/"> <img class="logo " src="/images/logo.png"></a>
+				</div>
+				
+				<div style="z-index: 6" class="rwd_logo">
+
+				<button class="hamburger rwd_ham">&#9776;</button>
+ 				<button class="cross">&#735;</button>
+
+ 				</div>
+ 				<div class="menu" style="z-index: 7">
+ 					<ul>
+    					<a href="#"><li>LINK ONE</li></a>
+    					<a href="#"><li>LINK TWO</li></a>
+    					<a href="#"><li>LINK THREE</li></a>
+    					<a href="#"><li>LINK FOUR</li></a>
+    					<a href="#"><li>LINK FIVE</li></a>
+  					</ul>
+				</div>
+
+			</li>
+			
+		</ul>
+	</div>
+</div>

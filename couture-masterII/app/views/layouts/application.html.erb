@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= @title || 'Home' %> | Couture Consulting 古卓諮詢</title>
+		<%= stylesheet_link_tag    'application', media: 'all'%>
+		<%= javascript_include_tag 'application' %>
+		<%= csrf_meta_tags %>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Teresa - A One And Multi Page Fashion HTML Template</title>
+		<!--stylesheet css file start-->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/couture.css?v=18.0">
+
+		<!--stylesheet css file end-->
+		<!-- favicon links -->
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+
+
+		<!-- Definity -->
+        <!-- Fonts -->
+        <link rel="stylesheet" href="/css/style.css?v=4.1">
+        <link rel="stylesheet" href="/css/linea-font.css?v=1.0">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="/css/slick.css?v=1.0">
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate1.css">
+
+
+        <!-- Definity CSS -->
+        <link rel="stylesheet" href="/css/main1.css?v=2.0">
+        <link rel="stylesheet" href="/css/responsive.css?v=1.1">
+
+       
+
+
+
+
+	</head>
+	<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
+	<!--[if !IE]><!-->
+	<!-- Header End -->
+	<!-- Body Start -->
+	<body>
+		<!--Pre loader start-->
+		<!--pre loader end-->
+		<!--HOME SECTION-->
+		<!--header-->
+		<!--HOME SECTION-->
+		
+		<!--second menu start-->
+		<!--HOME FINISH-->
+		<!--About Start-->
+		<%= yield %>
+		<!--Contact Section End-->
+		<!--Footer Start-->
+		<%= render partial: 'shared/footer'%>
+		<!--Footer End-->
+		<!--Scripts Start-->
+		<%= render partial: 'shared/foot_js'%>
+		<!--Scripts End-->
+		<!--Body End-->
+	</body>
+</html>

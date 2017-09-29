@@ -1,0 +1,16 @@
+<div class="pagenav fixedmenu">
+	<div class="holder-fixedmenu">
+		<div class="logo-fixedmenu">
+			<a href="/"><%= render partial: 'shared/logo' %></a>
+		</div>
+		<div class="menu-fixedmenu home">
+			<ul id="menu-home-page" class="menu">
+				<% menus.each do |m| %>
+				<li>
+					<a href="<%= m[1] %>" class="<%= is_active(action_name,m[2]) %>"><%= m[0] %></a>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
